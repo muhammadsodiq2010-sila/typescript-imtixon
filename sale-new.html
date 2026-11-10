@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yangi sotuv | Online Dorixona</title>
+
+  <link rel="stylesheet" href="css/sale-new.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+      <span class="brand-icon">
+        <i class="fa-solid fa-prescription-bottle-medical"></i>
+      </span>
+      <span>Online<br>Dorixona</span>
+    </a>
+
+    <nav class="nav">
+      <a href="dashboard.html">
+        <span class="nav-icon"><i class="fa-solid fa-gauge-high"></i></span>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="products.html">
+        <span class="nav-icon"><i class="fa-solid fa-pills"></i></span>
+        <span>Mahsulotlar</span>
+      </a>
+
+      <a href="inventory.html">
+        <span class="nav-icon"><i class="fa-solid fa-warehouse"></i></span>
+        <span>Ombor</span>
+      </a>
+
+      <a class="active" href="sales.html">
+        <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span>Sotuvlar</span>
+      </a>
+
+      <a href="reports.html">
+        <span class="nav-icon"><i class="fa-solid fa-chart-column"></i></span>
+        <span>Hisobotlar</span>
+      </a>
+
+      <a href="settings.html">
+        <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+        <span>Sozlamalar</span>
+      </a>
+    </nav>
+
+    <div class="admin">
+      <div class="avatar">A</div>
+      <div>
+        <b>Admin</b>
+        <small>Administrator</small>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <label class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Qidiruv...">
+      </label>
+
+      <div class="top-right">
+        <span class="top-chip">
+          <i class="fa-solid fa-bell"></i>
+          3
+        </span>
+
+        <span class="top-chip">
+          <i class="fa-regular fa-calendar"></i>
+          10.11.2026
+        </span>
+      </div>
+    </header>
+
+    <a class="back-link" href="sales.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      Sotuvlarga qaytish
+    </a>
+
+    <div class="heading">
+      <div>
+        <h1>Yangi sotuv</h1>
+        <p>Mahsulot tanlang, miqdorini kiriting va chekni rasmiylashtiring</p>
+      </div>
+    </div>
+
+    <section class="panel">
+
+      <form id="saleForm">
+
+        <div class="form-grid">
+
+          <div class="form-group full">
+            <label>Mahsulot *</label>
+
+            <select class="field" id="saleProduct" required>
+              <option value="">Mahsulotni tanlang</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Miqdori *</label>
+
+            <input
+              class="field"
+              id="saleQuantity"
+              type="number"
+              min="1"
+              value="1"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>To‘lov turi *</label>
+
+            <select class="field" id="paymentType" required>
+              <option value="Naqd pul">Naqd pul</option>
+              <option value="Plastik karta">Plastik karta</option>
+              <option value="Click / Payme">Click / Payme</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Mijoz telefon raqami (ixtiyoriy)</label>
+
+            <input
+              class="field"
+              id="customerPhone"
+              type="tel"
+              placeholder="+998 __ ___ __ __"
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Sotuv sanasi</label>
+
+            <input
+              class="field"
+              id="saleDate"
+              type="date"
+              required
+            >
+          </div>
+
+        </div>
+
+        <div class="summary">
+          <span>Jami summa</span>
+          <strong id="totalAmount">0 so‘m</strong>
+        </div>
+
+        <div class="form-actions">
+
+          <a class="btn light" href="sales.html">
+            Bekor qilish
+          </a>
+
+          <button class="btn" type="submit">
+            <i class="fa-solid fa-check"></i>
+            Sotuvni yakunlash
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Online Dorixona · Admin boshqaruv tizimi
+    </footer>
+
+  </main>
+
+  <script type="module" src="./dist/sale-new.js"></script>
+
+</body>
+</html>

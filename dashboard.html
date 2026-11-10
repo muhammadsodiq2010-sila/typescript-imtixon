@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Online Dorixona</title>
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+      <span class="brand-icon">
+        <i class="fa-solid fa-prescription-bottle-medical"></i>
+      </span>
+      <span>Online<br>Dorixona</span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="dashboard.html">
+        <span class="nav-icon"><i class="fa-solid fa-gauge-high"></i></span>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="products.html">
+        <span class="nav-icon"><i class="fa-solid fa-pills"></i></span>
+        <span>Mahsulotlar</span>
+      </a>
+
+      <a href="inventory.html">
+        <span class="nav-icon"><i class="fa-solid fa-warehouse"></i></span>
+        <span>Ombor</span>
+      </a>
+
+      <a href="sales.html">
+        <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span>Sotuvlar</span>
+      </a>
+
+      <a href="reports.html">
+        <span class="nav-icon"><i class="fa-solid fa-chart-column"></i></span>
+        <span>Hisobotlar</span>
+      </a>
+
+      <a href="settings.html">
+        <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+        <span>Sozlamalar</span>
+      </a>
+    </nav>
+
+    <div class="admin">
+      <div class="avatar">A</div>
+      <div>
+        <b>Admin</b>
+        <small>Administrator</small>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <label class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Qidiruv...">
+      </label>
+
+      <div class="top-right">
+        <span class="top-chip">
+          <i class="fa-solid fa-bell"></i>
+          3
+        </span>
+
+        <span class="top-chip">
+          <i class="fa-regular fa-calendar"></i>
+          10.11.2026
+        </span>
+      </div>
+    </header>
+
+    <div class="heading">
+      <div>
+        <h1>Boshqaruv paneli</h1>
+        <p>Dorixona holati haqida umumiy ma’lumot</p>
+      </div>
+    </div>
+
+    <!-- Statistikalar -->
+    <div class="stats">
+
+      <div class="stat">
+        <strong id="totalProducts">0</strong>
+        <span>Jami mahsulotlar</span>
+      </div>
+
+      <div class="stat">
+        <strong id="todaySales">0</strong>
+        <span>Bugungi sotuvlar</span>
+      </div>
+
+      <div class="stat">
+        <strong id="todayRevenue">0</strong>
+        <span>Bugungi daromad (so‘m)</span>
+      </div>
+
+      <div class="stat">
+        <strong id="lowStock">0</strong>
+        <span>Kam qolgan dorilar</span>
+      </div>
+
+    </div>
+
+    <!-- Tezkor amallar -->
+    <div class="panel">
+
+      <div class="panel-head">
+        <h2>Tezkor amallar</h2>
+      </div>
+
+      <div class="toolbar">
+
+        <a class="btn" href="product-add.html">
+          <i class="fa-solid fa-plus"></i>
+          Yangi mahsulot
+        </a>
+
+        <a class="btn blue" href="stock-in.html">
+          <i class="fa-solid fa-plus"></i>
+          Kirim qilish
+        </a>
+
+        <a class="btn orange" href="stock-out.html">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Chiqim qilish
+        </a>
+
+        <a class="btn" href="sale-new.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Yangi sotuv
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Muddati yaqin mahsulotlar -->
+    <div class="panel">
+
+      <div class="panel-head">
+        <h2>Muddati yaqin mahsulotlar</h2>
+      </div>
+
+      <div class="table-wrap">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Mahsulot</th>
+              <th>Yaroqlilik muddati</th>
+              <th>Qoldiq</th>
+              <th>Holat</th>
+            </tr>
+          </thead>
+
+          <tbody id="expiringProducts">
+            <tr>
+              <td colspan="4">Ma’lumotlar yuklanmoqda...</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      © 2026 Online Dorixona · Admin boshqaruv tizimi
+    </footer>
+
+  </main>
+
+  <script type="module" src="./dist/dashboard.js"></script>
+
+</body>
+</html>

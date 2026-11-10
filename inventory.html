@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="uz">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Ombor | Online Dorixona
+  </title>
+  <link href="css/inventory.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <aside class="sidebar">
+   <a class="brand" href="dashboard.html">
+    <span class="brand-icon">
+     <i aria-hidden="true" class="fa-solid fa-prescription-bottle-medical">
+     </i>
+    </span>
+    <span>
+     Online
+     <br/>
+     Dorixona
+    </span>
+   </a>
+   <nav class="nav">
+    <a class="" href="dashboard.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-gauge-high">
+      </i>
+     </span>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="" href="products.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-pills">
+      </i>
+     </span>
+     <span>
+      Mahsulotlar
+     </span>
+    </a>
+    <a class="active" href="inventory.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-warehouse">
+      </i>
+     </span>
+     <span>
+      Ombor
+     </span>
+    </a>
+    <a class="" href="sales.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-cart-shopping">
+      </i>
+     </span>
+     <span>
+      Sotuvlar
+     </span>
+    </a>
+    <a class="" href="reports.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-chart-column">
+      </i>
+     </span>
+     <span>
+      Hisobotlar
+     </span>
+    </a>
+    <a class="" href="settings.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-gear">
+      </i>
+     </span>
+     <span>
+      Sozlamalar
+     </span>
+    </a>
+   </nav>
+   <div class="admin">
+    <div class="avatar">
+     A
+    </div>
+    <div>
+     <b>
+      Admin
+     </b>
+     <small>
+      Administrator
+     </small>
+    </div>
+   </div>
+  </aside>
+  <main class="main">
+   <header class="topbar">
+    <label class="search">
+     <i aria-hidden="true" class="fa-solid fa-magnifying-glass">
+     </i>
+     <input placeholder="Qidiruv..." type="search"/>
+    </label>
+    <div class="top-right">
+     <span class="top-chip">
+      <i aria-hidden="true" class="fa-solid fa-bell">
+      </i>
+      3
+     </span>
+     <span class="top-chip">
+      <i aria-hidden="true" class="fa-regular fa-calendar">
+      </i>
+      05.11.2026
+     </span>
+    </div>
+   </header>
+   <div class="heading">
+    <div>
+     <h1>
+      Ombor boshqaruvi
+     </h1>
+     <p>
+      Mahsulotlar kirimi, chiqimi va qoldig‘ini nazorat qilish
+     </p>
+    </div>
+    <div class="toolbar">
+     <a class="btn" href="stock-in.html">
+      <i aria-hidden="true" class="fa-solid fa-plus">
+      </i>
+      Kirim qilish
+     </a>
+     <a class="btn blue" href="stock-out.html">
+      <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+      </i>
+      Chiqim qilish
+     </a>
+    </div>
+   </div>
+   <div class="stats">
+    <div class="stat">
+     <strong>
+      1 250
+     </strong>
+     <span>
+      Jami mahsulot turi
+     </span>
+    </div>
+    <div class="stat">
+     <strong>
+      245 000
+     </strong>
+     <span>
+      Umumiy qoldiq
+     </span>
+    </div>
+    <div class="stat">
+     <strong>
+      15 ta
+     </strong>
+     <span>
+      Kam qolgan mahsulot
+     </span>
+    </div>
+    <div class="stat">
+     <strong>
+      32
+     </strong>
+     <span>
+      Bugungi kirimlar
+     </span>
+    </div>
+   </div>
+   <section class="panel">
+    <div class="panel-head">
+     <h2>
+      Ombordagi mahsulotlar
+     </h2>
+    </div>
+    <div class="table-wrap">
+     <table>
+      <tr>
+       <th>
+        Mahsulot
+       </th>
+       <th>
+        Qoldiq
+       </th>
+       <th>
+        Minimal son
+       </th>
+       <th>
+        Yaroqlilik muddati
+       </th>
+       <th>
+        Holat
+       </th>
+      </tr>
+      <tr>
+       <td>
+        Paracetamol
+       </td>
+       <td>
+        100
+       </td>
+       <td>
+        20
+       </td>
+       <td>
+        20.05.2027
+       </td>
+       <td>
+        <span class="tag">
+         Yetarli
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Amoxicillin
+       </td>
+       <td>
+        8
+       </td>
+       <td>
+        20
+       </td>
+       <td>
+        10.06.2027
+       </td>
+       <td>
+        <span class="tag red">
+         Kam qolgan
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Ibuprofen
+       </td>
+       <td>
+        75
+       </td>
+       <td>
+        20
+       </td>
+       <td>
+        15.07.2027
+       </td>
+       <td>
+        <span class="tag">
+         Yetarli
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </section>
+   <footer class="footer">
+    © 2026 Online Dorixona · Admin boshqaruv tizimi
+   </footer>
+  </main>
+ </body>
+</html>
+

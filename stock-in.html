@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uz">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Omborga kirim qilish | Online Dorixona
+  </title>
+  <link href="css/stock-in.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <aside class="sidebar">
+   <a class="brand" href="dashboard.html">
+    <span class="brand-icon">
+     <i aria-hidden="true" class="fa-solid fa-prescription-bottle-medical">
+     </i>
+    </span>
+    <span>
+     Online
+     <br/>
+     Dorixona
+    </span>
+   </a>
+   <nav class="nav">
+    <a class="" href="dashboard.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-gauge-high">
+      </i>
+     </span>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="" href="products.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-pills">
+      </i>
+     </span>
+     <span>
+      Mahsulotlar
+     </span>
+    </a>
+    <a class="active" href="inventory.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-warehouse">
+      </i>
+     </span>
+     <span>
+      Ombor
+     </span>
+    </a>
+    <a class="" href="sales.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-cart-shopping">
+      </i>
+     </span>
+     <span>
+      Sotuvlar
+     </span>
+    </a>
+    <a class="" href="reports.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-chart-column">
+      </i>
+     </span>
+     <span>
+      Hisobotlar
+     </span>
+    </a>
+    <a class="" href="settings.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-gear">
+      </i>
+     </span>
+     <span>
+      Sozlamalar
+     </span>
+    </a>
+   </nav>
+   <div class="admin">
+    <div class="avatar">
+     A
+    </div>
+    <div>
+     <b>
+      Admin
+     </b>
+     <small>
+      Administrator
+     </small>
+    </div>
+   </div>
+  </aside>
+  <main class="main">
+   <header class="topbar">
+    <label class="search">
+     <i aria-hidden="true" class="fa-solid fa-magnifying-glass">
+     </i>
+     <input placeholder="Qidiruv..." type="search"/>
+    </label>
+    <div class="top-right">
+     <span class="top-chip">
+      <i aria-hidden="true" class="fa-solid fa-bell">
+      </i>
+      3
+     </span>
+     <span class="top-chip">
+      <i aria-hidden="true" class="fa-regular fa-calendar">
+      </i>
+      05.11.2026
+     </span>
+    </div>
+   </header>
+   <a class="back-link" href="inventory.html">
+    <i aria-hidden="true" class="fa-solid fa-arrow-left">
+    </i>
+    Omborga qaytish
+   </a>
+   <div class="heading">
+    <div>
+     <h1>
+      Omborga kirim qilish
+     </h1>
+     <p>
+      Yetkazib beruvchidan kelgan mahsulotlarni omborga qo‘shish
+     </p>
+    </div>
+   </div>
+   <section class="panel">
+    <div class="notice">
+     Kirim qilingan mahsulot miqdori ombordagi mavjud qoldiqqa qo‘shiladi.
+    </div>
+    <form action="inventory.html">
+     <div class="form-grid">
+      <div class="form-group full">
+       <label>
+        Mahsulotni tanlang *
+       </label>
+       <select class="field" required="">
+        <option value="">
+         Mahsulotni tanlang
+        </option>
+        <option>
+         Paracetamol 500mg
+        </option>
+        <option>
+         Amoxicillin 250mg
+        </option>
+        <option>
+         Ibuprofen 200mg
+        </option>
+        <option>
+         Vitamin C
+        </option>
+       </select>
+      </div>
+      <div class="form-group">
+       <label>
+        Kirim miqdori *
+       </label>
+       <input class="field" min="1" placeholder="Dona soni" required="" type="number"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Bir dona xarid narxi (so‘m)
+       </label>
+       <input class="field" min="0" placeholder="0" type="number"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Yetkazib beruvchi
+       </label>
+       <input class="field" placeholder="Yetkazib beruvchi nomi"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Hujjat / faktura raqami
+       </label>
+       <input class="field" placeholder="Masalan: INV-001"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Yaroqlilik muddati *
+       </label>
+       <input class="field" required="" type="date"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Kirim sanasi *
+       </label>
+       <input class="field" required="" type="date" value="2026-11-05"/>
+      </div>
+      <div class="form-group full">
+       <label>
+        Izoh
+       </label>
+       <textarea class="field" placeholder="Qo‘shimcha izoh..." rows="3"></textarea>
+      </div>
+     </div>
+     <div class="form-actions">
+      <a class="btn light" href="inventory.html">
+       Bekor qilish
+      </a>
+      <button class="btn" type="submit">
+       <i aria-hidden="true" class="fa-solid fa-plus">
+       </i>
+       Kirimni saqlash
+      </button>
+     </div>
+    </form>
+   </section>
+   <footer class="footer">
+    © 2026 Online Dorixona · Admin boshqaruv tizimi
+   </footer>
+  </main>
+ </body>
+</html>
+

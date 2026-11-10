@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yangi mahsulot qo‘shish | Online Dorixona</title>
+
+  <link rel="stylesheet" href="css/product-add.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <a class="brand" href="dashboard.html">
+      <span class="brand-icon">
+        <i class="fa-solid fa-prescription-bottle-medical"></i>
+      </span>
+      <span>Online<br>Dorixona</span>
+    </a>
+
+    <nav class="nav">
+      <a href="dashboard.html">
+        <span class="nav-icon"><i class="fa-solid fa-gauge-high"></i></span>
+        <span>Dashboard</span>
+      </a>
+
+      <a class="active" href="products.html">
+        <span class="nav-icon"><i class="fa-solid fa-pills"></i></span>
+        <span>Mahsulotlar</span>
+      </a>
+
+      <a href="inventory.html">
+        <span class="nav-icon"><i class="fa-solid fa-warehouse"></i></span>
+        <span>Ombor</span>
+      </a>
+
+      <a href="sales.html">
+        <span class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span>Sotuvlar</span>
+      </a>
+
+      <a href="reports.html">
+        <span class="nav-icon"><i class="fa-solid fa-chart-column"></i></span>
+        <span>Hisobotlar</span>
+      </a>
+
+      <a href="settings.html">
+        <span class="nav-icon"><i class="fa-solid fa-gear"></i></span>
+        <span>Sozlamalar</span>
+      </a>
+    </nav>
+
+    <div class="admin">
+      <div class="avatar">A</div>
+      <div>
+        <b>Admin</b>
+        <small>Administrator</small>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <label class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Qidiruv...">
+      </label>
+
+      <div class="top-right">
+        <span class="top-chip">
+          <i class="fa-solid fa-bell"></i>
+          3
+        </span>
+
+        <span class="top-chip">
+          <i class="fa-regular fa-calendar"></i>
+          10.11.2026
+        </span>
+      </div>
+    </header>
+
+    <a class="back-link" href="products.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      Mahsulotlarga qaytish
+    </a>
+
+    <div class="heading">
+      <div>
+        <h1>Yangi mahsulot qo‘shish</h1>
+        <p>Yangi dori yoki tibbiy mahsulot ma’lumotlarini kiriting</p>
+      </div>
+    </div>
+
+    <section class="panel">
+
+      <div class="notice">
+        Barcha majburiy maydonlarni to‘ldiring. Mahsulot nomi va yaroqlilik muddatini diqqat bilan tekshiring.
+      </div>
+
+      <form id="productForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Mahsulot nomi *</label>
+            <input
+              class="field"
+              id="productName"
+              type="text"
+              placeholder="Masalan: Paracetamol 500mg"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Kategoriya *</label>
+            <select class="field" id="productCategory" required>
+              <option value="">Tanlang</option>
+              <option value="Pain Relief">Pain Relief</option>
+              <option value="Allergy">Allergy</option>
+              <option value="Vitamins">Vitamins</option>
+              <option value="Antiseptic">Antiseptic</option>
+              <option value="Digestive Health">Digestive Health</option>
+              <option value="Nasal Care">Nasal Care</option>
+              <option value="Skin Care">Skin Care</option>
+              <option value="Medical Devices">Medical Devices</option>
+              <option value="Eye Care">Eye Care</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Ishlab chiqaruvchi *</label>
+            <input
+              class="field"
+              id="manufacturer"
+              type="text"
+              placeholder="Kompaniya nomi"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Sotib olish narxi (so‘m) *</label>
+            <input
+              class="field"
+              id="purchasePrice"
+              type="number"
+              min="0"
+              placeholder="0"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Sotish narxi (so‘m) *</label>
+            <input
+              class="field"
+              id="sellingPrice"
+              type="number"
+              min="0"
+              placeholder="0"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Boshlang‘ich miqdor *</label>
+            <input
+              class="field"
+              id="quantity"
+              type="number"
+              min="0"
+              placeholder="Dona soni"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Minimal miqdor *</label>
+            <input
+              class="field"
+              id="minQuantity"
+              type="number"
+              min="0"
+              placeholder="Masalan: 5"
+              value="5"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label>Yaroqlilik muddati *</label>
+            <input
+              class="field"
+              id="expiryDate"
+              type="date"
+              required
+            >
+          </div>
+
+          <div class="form-group full">
+            <label>Mahsulot rasmi URL manzili</label>
+            <input
+              class="field"
+              id="image"
+              type="url"
+              placeholder="https://example.com/image.jpg"
+            >
+          </div>
+
+          <div class="form-group full">
+            <label>Izoh</label>
+            <textarea
+              class="field"
+              id="description"
+              placeholder="Qo‘shimcha ma’lumot..."
+              rows="3"
+            ></textarea>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <a class="btn light" href="products.html">
+            Bekor qilish
+          </a>
+
+          <button class="btn" type="submit">
+            <i class="fa-solid fa-check"></i>
+            Mahsulotni saqlash
+          </button>
+        </div>
+
+      </form>
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Online Dorixona · Admin boshqaruv tizimi
+    </footer>
+
+  </main>
+
+  <script type="module" src="./dist/product-add.js"></script>
+
+</body>
+</html>

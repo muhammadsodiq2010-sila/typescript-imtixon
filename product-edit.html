@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahsulotni tahrirlash | Online Dorixona</title>
+
+  <link rel="stylesheet" href="css/product-add.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-prescription-bottle-medical"></i>
+      </div>
+      <span>Online<br>Dorixona</span>
+    </div>
+
+    <nav class="nav">
+      <a href="dashboard.html">
+        <i class="fa-solid fa-gauge-high nav-icon"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="products.html" class="active">
+        <i class="fa-solid fa-pills nav-icon"></i>
+        <span>Mahsulotlar</span>
+      </a>
+
+      <a href="sale-new.html">
+        <i class="fa-solid fa-cart-shopping nav-icon"></i>
+        <span>Sotuvlar</span>
+      </a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <div class="top-right">
+        <div class="top-chip">
+          <i class="fa-solid fa-user"></i> Administrator
+        </div>
+      </div>
+    </div>
+
+    <div class="heading">
+      <div>
+        <h1>Mahsulotni tahrirlash</h1>
+        <p>Mahsulot ma'lumotlarini o‘zgartiring</p>
+      </div>
+    </div>
+
+    <section class="panel">
+
+      <form id="editProductForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label>Mahsulot nomi</label>
+            <input class="field" type="text" id="productName" required>
+          </div>
+
+          <div class="form-group">
+            <label>Kategoriya</label>
+            <input class="field" type="text" id="productCategory" required>
+          </div>
+
+          <div class="form-group">
+            <label>Ishlab chiqaruvchi</label>
+            <input class="field" type="text" id="manufacturer" required>
+          </div>
+
+          <div class="form-group">
+            <label>Sotib olish narxi</label>
+            <input class="field" type="number" id="purchasePrice" min="0" required>
+          </div>
+
+          <div class="form-group">
+            <label>Sotish narxi</label>
+            <input class="field" type="number" id="sellingPrice" min="0" required>
+          </div>
+
+          <div class="form-group">
+            <label>Miqdori</label>
+            <input class="field" type="number" id="quantity" min="0" required>
+          </div>
+
+          <div class="form-group">
+            <label>Minimal miqdor</label>
+            <input class="field" type="number" id="minQuantity" min="0" required>
+          </div>
+
+          <div class="form-group">
+            <label>Yaroqlilik muddati</label>
+            <input class="field" type="date" id="expiryDate" required>
+          </div>
+
+          <div class="form-group full">
+            <label>Rasm manzili</label>
+            <input class="field" type="text" id="image">
+          </div>
+
+          <div class="form-group full">
+            <label>Mahsulot haqida</label>
+            <textarea class="field" id="description" rows="4"></textarea>
+          </div>
+
+        </div>
+
+        <div class="form-actions">
+          <a href="products.html" class="btn light">
+            <i class="fa-solid fa-arrow-left"></i> Orqaga
+          </a>
+
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-floppy-disk"></i> Saqlash
+          </button>
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="./dist/product-edit.js"></script>
+
+</body>
+</html>

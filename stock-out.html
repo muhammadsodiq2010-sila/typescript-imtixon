@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uz">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Ombordan chiqim qilish | Online Dorixona
+  </title>
+  <link href="css/stock-out.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <aside class="sidebar">
+   <a class="brand" href="dashboard.html">
+    <span class="brand-icon">
+     <i aria-hidden="true" class="fa-solid fa-prescription-bottle-medical">
+     </i>
+    </span>
+    <span>
+     Online
+     <br/>
+     Dorixona
+    </span>
+   </a>
+   <nav class="nav">
+    <a class="" href="dashboard.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-gauge-high">
+      </i>
+     </span>
+     <span>
+      Dashboard
+     </span>
+    </a>
+    <a class="" href="products.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-pills">
+      </i>
+     </span>
+     <span>
+      Mahsulotlar
+     </span>
+    </a>
+    <a class="active" href="inventory.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-warehouse">
+      </i>
+     </span>
+     <span>
+      Ombor
+     </span>
+    </a>
+    <a class="" href="sales.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-cart-shopping">
+      </i>
+     </span>
+     <span>
+      Sotuvlar
+     </span>
+    </a>
+    <a class="" href="reports.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-chart-column">
+      </i>
+     </span>
+     <span>
+      Hisobotlar
+     </span>
+    </a>
+    <a class="" href="settings.html">
+     <span class="nav-icon">
+      <i aria-hidden="true" class="fa-solid fa-gear">
+      </i>
+     </span>
+     <span>
+      Sozlamalar
+     </span>
+    </a>
+   </nav>
+   <div class="admin">
+    <div class="avatar">
+     A
+    </div>
+    <div>
+     <b>
+      Admin
+     </b>
+     <small>
+      Administrator
+     </small>
+    </div>
+   </div>
+  </aside>
+  <main class="main">
+   <header class="topbar">
+    <label class="search">
+     <i aria-hidden="true" class="fa-solid fa-magnifying-glass">
+     </i>
+     <input placeholder="Qidiruv..." type="search"/>
+    </label>
+    <div class="top-right">
+     <span class="top-chip">
+      <i aria-hidden="true" class="fa-solid fa-bell">
+      </i>
+      3
+     </span>
+     <span class="top-chip">
+      <i aria-hidden="true" class="fa-regular fa-calendar">
+      </i>
+      05.11.2026
+     </span>
+    </div>
+   </header>
+   <a class="back-link" href="inventory.html">
+    <i aria-hidden="true" class="fa-solid fa-arrow-left">
+    </i>
+    Omborga qaytish
+   </a>
+   <div class="heading">
+    <div>
+     <h1>
+      Ombordan chiqim qilish
+     </h1>
+     <p>
+      Ombordan chiqarilayotgan mahsulotlarni qayd etish
+     </p>
+    </div>
+   </div>
+   <section class="panel">
+    <div class="notice">
+     Chiqim sababini belgilang. Miqdor ombordagi qoldiqdan ayriladi.
+    </div>
+    <form action="inventory.html">
+     <div class="form-grid">
+      <div class="form-group full">
+       <label>
+        Mahsulotni tanlang *
+       </label>
+       <select class="field" required="">
+        <option value="">
+         Mahsulotni tanlang
+        </option>
+        <option>
+         Paracetamol 500mg — qoldiq 100
+        </option>
+        <option>
+         Amoxicillin 250mg — qoldiq 50
+        </option>
+        <option>
+         Ibuprofen 200mg — qoldiq 75
+        </option>
+       </select>
+      </div>
+      <div class="form-group">
+       <label>
+        Chiqim miqdori *
+       </label>
+       <input class="field" min="1" placeholder="Dona soni" required="" type="number"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Chiqim sababi *
+       </label>
+       <select class="field" required="">
+        <option value="">
+         Sababni tanlang
+        </option>
+        <option>
+         Sotuv
+        </option>
+        <option>
+         Yaroqlilik muddati tugagan
+        </option>
+        <option>
+         Shikastlangan mahsulot
+        </option>
+        <option>
+         Boshqa
+        </option>
+       </select>
+      </div>
+      <div class="form-group">
+       <label>
+        Chiqim sanasi *
+       </label>
+       <input class="field" required="" type="date" value="2026-11-05"/>
+      </div>
+      <div class="form-group">
+       <label>
+        Mas’ul shaxs
+       </label>
+       <input class="field" value="Admin"/>
+      </div>
+      <div class="form-group full">
+       <label>
+        Izoh
+       </label>
+       <textarea class="field" placeholder="Chiqim haqida izoh..." rows="3"></textarea>
+      </div>
+     </div>
+     <div class="form-actions">
+      <a class="btn light" href="inventory.html">
+       Bekor qilish
+      </a>
+      <button class="btn blue" type="submit">
+       <i aria-hidden="true" class="fa-solid fa-arrow-up-right-from-square">
+       </i>
+       Chiqimni saqlash
+      </button>
+     </div>
+    </form>
+   </section>
+   <footer class="footer">
+    © 2026 Online Dorixona · Admin boshqaruv tizimi
+   </footer>
+  </main>
+ </body>
+</html>
+
